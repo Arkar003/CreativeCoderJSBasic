@@ -125,7 +125,49 @@
 //   });
 // console.log("third");
 
+//fetch
+// fetch("https://jsonplaceholder.typicode.com/todos")
+//   .then((response) => {
+//     response
+//       .json()
+//       .then((data) => {
+//         console.log(data);
+//       })
+//       .catch((err) => {
+//         console.log(err);
+//       });
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+//a better way, real life usage
+// fetch("https://jsonplaceholder.typicode.com/todos/1")
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+//await
+// async function fetchTodo() {
+//   try {
+//     let response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+//     let data = await response.json();
+//     console.log(data);
+//   } catch (err) {
+//     console.log(err);
+//   }
+// }
+
+// fetchTodo();
+
 // console.log("Annyeong");
 
-const { add, PI, sub } = require("./math");
-console.log(PI);
+//module systems
+// const { add, PI, sub } = require("./math");
+// console.log(PI);
